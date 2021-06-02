@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Home page | Almighty Baka</title>
+    
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css" />
+        <link rel="stylesheet" href="lib/highlight/styles/solarized-dark.css" />
+        <link href="http://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300,400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/site.css" />
+    
+    
+</head>
+<body>
+    <!-- I see what you're doing here ( ͡° ͜ʖ ͡°) -->
+    <main>
+        
+<section id="home">
+    <div class="home-container">
+        <div class="home-background"></div>
+        <div class="home-content-container">
+            <div class="home-background-blur"></div>
+            <div class="home-content text-center">
+                <div>
+                    <img class="profile-pic" src="images/baka-pic.jpg"/>
+                </div>
+                <h1>Ivan Kornev</h1>
+                <small>aka Almighty Baka</small>
+                <div class="home-headline"><i>Creating software for the digital world.</i></div>
+                <div class="home-social">
+                    <a href="mailto:ivanfedulov@almightybaka.com">mail</a>
+                    <div class="divider"></div>
+                    <a href="https://github.com/AlmightyBaka" target="_blank">git</a>
+                    <div class="divider"></div>
+                    <a href="https://www.linkedin.com/in/almighty-baka" target="_blank">li</a>
+                    <div class="divider"></div>
+                    <a href="https://telegram.me/AlmightyBaka" target="_blank">tg</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    </main>
+
+    
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="lib/highlight/highlight.pack.js"></script>
+    
+    
+
+    
+    <script>
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        var backgroundNumber = getRandomInt(1, 9);
+        document.getElementsByClassName("home-background")[0].style.backgroundImage = "url(images/home_bg/home_bg_" + backgroundNumber + ".gif)";
+        document.getElementsByClassName("home-background-blur")[0].style.backgroundImage = "url(images/home_bg/home_bg_" + backgroundNumber + ".gif)";
+    </script>
+
+</body>
+</html>
